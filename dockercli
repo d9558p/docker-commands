@@ -1,0 +1,63 @@
+clear
+apt-get update -y
+clear
+apt-get install docker.io
+clear
+docker --version
+docker images
+docker container ls
+docker ps
+docker ps -a
+docker search ubuntu
+docker search docker-image
+docker search d9558/docker-image
+docker search d9558p
+docker-image
+docker search d9558p/docker-image
+docker search nginx
+docker pull nginx
+docker images
+docker ps -a
+docker run -itd -p 80:80 nginx
+docker ps -a
+docker pull apache2
+docker pull apache
+docker search apache
+docker pull httpd
+docker run -itd -p 81:80 httpd
+docker images
+docker ps -a
+docker login
+docker push nginx
+docker tag 9eee96112def d9558p/prasadnginx
+docker images
+docker push d9558p/prasadng
+docker rmi 9eee96112def
+docker rmi d9558p/prasadnginx
+docker images
+docker pull d9558p/prasadnginx
+docker images
+docker ps -a
+nano Dockerfile
+apt install azure-cli
+az login
+az account list
+az account ls
+docker tag nginx prasadry.azurecr.io/samples/nginx
+docker images
+docker push prasadry.azurecr.io/samples/nginx
+az acr login --name prasadry
+docker push prasadry.azurecr.io/samples/nginx
+docker images
+docker ps -a
+docker stop 95270a2078b4 0900a50a9399
+docker ps -a
+docker rm 95270a2078b4 0900a50a9399
+docker ps -a
+docker images
+docker rmi d9558p/prasadnginx nginx
+docker rmi prasadry.azurecr.io/samples/nginx
+docker images
+docker ps -a
+history
+
