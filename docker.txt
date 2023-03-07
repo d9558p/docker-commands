@@ -1,0 +1,10 @@
+  19  nano Dockerfile
+   20  docker image build -t python-hello-prasad .
+   21  docker images
+   22  history
+root@vm:/home/ubuntu# cat Dockerfile
+
+FROM python:3.6.1-alpine
+RUN pip install --upgrade pip
+CMD ["python","app.py"]
+COPY app.py /app.py
