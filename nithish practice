@@ -1,0 +1,39 @@
+apt-get update -y
+apt-get install docker.io
+docker --version
+docker info
+docker ps
+docker ps -a
+docker search jenkins
+docker search ubuntu
+docker search nginx
+docker pull nginx
+docker images
+docker pull ubuntu
+docker images
+docker ps -a
+docker run -itd -p 80:80 nginx
+docker ps -a
+docker search apache
+docker images
+docker rm <container id>
+docker stop $(docker ps -a -q) --> To stop all the containers
+docker rm <container id>
+docker ps -a
+docker run -itd -p 80:80 httpd
+docker images
+docker login
+docker images
+docker tag <Image id> d9558p/httpd
+docker images
+docker push d9558p/httpd
+docker rmi ad303d7f80f9 ad303d7f80f9
+docker ps -a
+docker rm 4c3e11186a4d
+docker stop <Container id>
+docker rmi -f <Image id>  --> Force removal
+docker images
+docker pull d9558p/httpd
+docker images
+docker run -it nginx
+# exit from interactive mode --> ctrl+p+q
